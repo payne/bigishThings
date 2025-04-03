@@ -46,6 +46,10 @@ export class ThingieUploaderComponent {
     }
   }
 
+  triggerFileInput(): void {
+    document.getElementById('fileInput')?.click();
+  }
+
   processFile(file: File): void {
     this.isUploading = true;
     this.progress = 0;

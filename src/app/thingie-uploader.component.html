@@ -1,4 +1,3 @@
-// thingie-uploader.component.html
 <div class="uploader-container">
   <mat-card>
     <mat-card-header>
@@ -16,11 +15,14 @@
           [disabled]="isUploading"
           class="file-input">
 
-        <label for="fileInput" class="file-label">
-          <button mat-raised-button color="primary" class="upload-btn" [disabled]="isUploading">
-            Choose JSON File
-          </button>
-        </label>
+        <button
+          mat-raised-button
+          color="primary"
+          class="upload-btn"
+          [disabled]="isUploading"
+          (click)="triggerFileInput()">
+          Choose JSON File
+        </button>
       </div>
 
       <div *ngIf="isUploading" class="progress-container">
@@ -37,3 +39,4 @@
     </mat-card-content>
   </mat-card>
 </div>
+
