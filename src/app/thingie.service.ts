@@ -1,3 +1,4 @@
+
 // thingie.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -16,3 +17,4 @@ export class ThingieService {
     return this.http.post<any>(this.apiUrl, thingie);
   }
 }
+

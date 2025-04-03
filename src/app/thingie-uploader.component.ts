@@ -1,11 +1,12 @@
 // thingie-uploader.component.ts
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { FileProcessorService } from './file-processor.service';
+import { ThingieService } from './thingie.service';
 
 @Component({
   selector: 'app-thingie-uploader',
@@ -16,6 +17,10 @@ import { FileProcessorService } from './file-processor.service';
     MatProgressBarModule,
     MatButtonModule,
     MatCardModule
+  ],
+  providers: [
+    ThingieService,
+    FileProcessorService
   ],
   templateUrl: './thingie-uploader.component.html',
   styleUrls: ['./thingie-uploader.component.scss']
@@ -65,4 +70,5 @@ export class ThingieUploaderComponent {
     });
   }
 }
+
 
