@@ -1,0 +1,39 @@
+// thingie-uploader.component.html
+<div class="uploader-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Thingie Processor</mat-card-title>
+      <mat-card-subtitle>Upload and process your Thingie JSON file</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="file-input-container">
+        <input
+          type="file"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+          accept=".json"
+          [disabled]="isUploading"
+          class="file-input">
+
+        <label for="fileInput" class="file-label">
+          <mat-button class="upload-btn" [disabled]="isUploading">
+            Choose JSON File
+          </mat-button>
+        </label>
+      </div>
+
+      <div *ngIf="isUploading" class="progress-container">
+        <div class="progress-info">
+          <span>Processing: {{ currentItem }} of {{ totalItems }} items</span>
+          <span>{{ progress.toFixed(1) }}%</span>
+        </div>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+
+      <div *ngIf="processingError" class="error-message">
+        {{ processingError }}
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>
