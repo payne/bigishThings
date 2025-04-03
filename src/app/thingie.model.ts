@@ -1,6 +1,10 @@
 // thingie.model.ts
 export interface Thingie {
-  id: string;
-  // Add other properties based on your Thingie object structure
-  [key: string]: any;
+  id: number;
+  name: string;
+  category: string;
+  price: number;
+  quantity: number;
+  in_stock: boolean;
+  manufacturer: string;
 }

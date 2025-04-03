@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "category": "Electronics",
+    "price": 1200.50,
+    "quantity": 10,
+    "in_stock": true,
+    "manufacturer": "Dell"
+  },
+  {
+    "id": 2,
+    "name": "Smartphone",
+    "category": "Electronics",
+    "price": 899.99,
+    "quantity": 25,
+    "in_stock": true,
+    "manufacturer": "Samsung"
+  },
+    {
+    "id": 3,
+    "name": "Tablet",
+    "category": "Electronics",
+    "price": 350.00,
+    "quantity": 15,
+    "in_stock": false,
+    "manufacturer": "Apple"
+  },
+    {
+    "id": 4,
+    "name": "Headphones",
+    "category": "Electronics",
+    "price": 150.75,
+    "quantity": 50,
+    "in_stock": true,
+    "manufacturer": "Sony"
+  },
+    {
+    "id": 5,
+    "name": "Monitor",
+    "category": "Electronics",
+    "price": 280.20,
+    "quantity": 8,
+    "in_stock": true,
+    "manufacturer": "LG"
+  },
+      {
+    "id": 6,
+    "name": "Keyboard",
+    "category": "Electronics",
+    "price": 75.00,
+    "quantity": 30,
+    "in_stock": true,
+    "manufacturer": "Logitech"
+  }
+]

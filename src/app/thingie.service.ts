@@ -9,7 +9,8 @@ import { Thingie } from './thingie.model';
   providedIn: 'root'
 })
 export class ThingieService {
-  private apiUrl = 'http://processor/api/thingie';
+  // Using json-server for local development
+  private apiUrl = 'http://localhost:3000/products';
 
   constructor(private http: HttpClient) {}
 
